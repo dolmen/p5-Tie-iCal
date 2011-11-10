@@ -64,7 +64,7 @@ on the format of the iCalendar file only.
 =head1 FILE LOCKING
 
 The Tie::iCal object returned by tie can also be used to access the underlying Tie::File object.
-This is accessable via the 'A' class variable.
+This is accessible via the 'A' class variable.
 This may be useful for file locking.
 
 	my $ical = tie %events, 'Tie::iCal', "mycalendar.ics";
