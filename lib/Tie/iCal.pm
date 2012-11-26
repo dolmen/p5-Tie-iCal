@@ -53,9 +53,10 @@ This document describes version 0.14 released 1st September 2006.
 
 =head1 DESCRIPTION
 
-Tie::iCal represents an RFC2445 iCalendar file as a Perl hash. Each key in the hash represents
+Tie::iCal represents an L<RFC 5545|https://tools.ietf.org/html/rfc5545>
+iCalendar file as a Perl hash. Each key in the hash represents
 an iCalendar component like VEVENT, VTODO or VJOURNAL. Each component in the file must have
-a unique UID property as specified in the RFC 2445. A file containing non-unique UIDs can
+a unique UID property as specified in the RFC 5545. A file containing non-unique UIDs can
 be converted to have only unique UIDs (see samples/uniquify.pl).
 
 The module makes very little effort in understanding what each iCalendar property means and concentrates
@@ -585,7 +586,7 @@ Property names that begin with UID can potentially confuse this module.
 
 Subcomponents such as VALARM must exist after any UID property.
 
-Deleting events individually may leave non-RFC2445 compliant empty VCALENDAR objects.
+Deleting events individually may leave non-RFC5545 compliant empty VCALENDAR objects.
 
 =head1 AUTHOR
 
