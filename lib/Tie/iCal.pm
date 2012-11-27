@@ -74,7 +74,8 @@ This may be useful for file locking.
 =head1 DATES
 
 The iCalendar specification uses a special format for dates. This module makes no effort in trying
-to interpret dates in this format. You should look at the Date::ICal module that can convert between
+to interpret dates in this format. You should look at the L<Date::ICal> module
+that can convert between
 Unix epoch dates and iCalendar date strings.
 
 =cut
@@ -598,6 +599,11 @@ Copyright (c) 2006 Blair Sutton. All rights reserved.
 This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
 =head1 SEE ALSO
+
+L<RFC 5545|https://tools.ietf.org/html/rfc5545> and
+L<RFC 5546|https://tools.ietf.org/html/rfc5546>
+(obsolete
+L<RFC 2445|https://tools.ietf.org/html/rfc2445>)
 
 L<perl>, L<Tie::File>, L<Date::ICal>
 
