@@ -12,7 +12,8 @@ samples/dump.pl
 samples/demo.ics
 samples/uniquify.pl
 samples/outlooksync.pl
+xt/changes.t
 TODO
-CHANGES
+Changes
 lib/Tie/iCal.pm
 META.json
