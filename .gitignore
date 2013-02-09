@@ -1,0 +1,8 @@
+MYMETA.*
+Makefile
+Build
+_build
+blib
+pm_to_blib
+Tie-iCal-*.tar.gz
+test.ics
