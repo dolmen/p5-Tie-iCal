@@ -63,7 +63,7 @@ ok(${$hash2}{'LOCATION'} eq 'my location');
 ok(-z 'test.ics');
 
 untie %events;
-#unlink 'test.ics';
+unlink 'test.ics';
 exit;
 
 __END__
