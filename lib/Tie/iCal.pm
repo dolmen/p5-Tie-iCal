@@ -542,6 +542,9 @@ sub toHash {
 			} elsif ($contentLine =~ /^[\w-]+:.*$/s) { # we don't have params
 				my ($name, @valueFragments) = &parse_line(':', $contentLine);
 				my @values;
+                if(scalar(@valueFragments) == 1 && !defined($valueFragments[0])) {
+                    $valueFragments[0] = '';
+                }
 				if ($name eq 'RRULE') {
 					my @params = &parse_line(';', join(':', @valueFragments));
 					my %params = map { my ($p, $v) = split(/=/, $_); $p => $v =~ /,/ ? [split(/,/,$v)] : $v } @params;
